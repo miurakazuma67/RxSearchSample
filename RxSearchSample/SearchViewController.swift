@@ -6,14 +6,15 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import RxOptional
 
-class ViewController: UIViewController {
+final class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
 
 }
 
