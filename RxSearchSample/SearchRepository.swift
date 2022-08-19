@@ -45,7 +45,7 @@ extension Reactive where Base: SearchRepository {
                 }
             }
             return Disposables.create()
-        }
+        }.share(replay: 1, scope: .whileConnected)
     }
 }
 

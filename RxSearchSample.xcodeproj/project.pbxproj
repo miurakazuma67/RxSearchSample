@@ -21,6 +21,8 @@
 		A49389C828ACAAE9003E6381 /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = A49389C728ACAAE9003E6381 /* RxOptional */; };
 		A49389CA28ACAC88003E6381 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49389C928ACAC88003E6381 /* SearchViewModel.swift */; };
 		A49389CC28ACC08F003E6381 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49389CB28ACC08F003E6381 /* SearchRepository.swift */; };
+		A49389CF28AF614F003E6381 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = A49389CE28AF614F003E6381 /* RxDataSources */; };
+		A49389D128AF62A5003E6381 /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49389D028AF62A5003E6381 /* SectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		A49389B428AC9B4C003E6381 /* RxSearchSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSearchSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A49389C928ACAC88003E6381 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A49389CB28ACC08F003E6381 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		A49389D028AF62A5003E6381 /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49389C528ACAAAE003E6381 /* RxRelay in Frameworks */,
+				A49389CF28AF614F003E6381 /* RxDataSources in Frameworks */,
 				A49389C328ACAAAE003E6381 /* RxCocoa in Frameworks */,
 				A49389C828ACAAE9003E6381 /* RxOptional in Frameworks */,
 			);
@@ -114,6 +118,7 @@
 				A493899528AC9B45003E6381 /* SearchViewController.swift */,
 				A49389C928ACAC88003E6381 /* SearchViewModel.swift */,
 				A49389CB28ACC08F003E6381 /* SearchRepository.swift */,
+				A49389D028AF62A5003E6381 /* SectionModel.swift */,
 				A493899728AC9B45003E6381 /* Search.storyboard */,
 				A493899A28AC9B4B003E6381 /* Assets.xcassets */,
 				A493899C28AC9B4B003E6381 /* LaunchScreen.storyboard */,
@@ -159,6 +164,7 @@
 				A49389C228ACAAAE003E6381 /* RxCocoa */,
 				A49389C428ACAAAE003E6381 /* RxRelay */,
 				A49389C728ACAAE9003E6381 /* RxOptional */,
+				A49389CE28AF614F003E6381 /* RxDataSources */,
 			);
 			productName = RxSearchSample;
 			productReference = A493898E28AC9B45003E6381 /* RxSearchSample.app */;
@@ -235,6 +241,7 @@
 			packageReferences = (
 				A49389C128ACAAAE003E6381 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				A49389C628ACAAE9003E6381 /* XCRemoteSwiftPackageReference "RxOptional" */,
+				A49389CD28AF614F003E6381 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = A493898F28AC9B45003E6381 /* Products */;
 			projectDirPath = "";
@@ -284,6 +291,7 @@
 				A49389CC28ACC08F003E6381 /* SearchRepository.swift in Sources */,
 				A49389CA28ACAC88003E6381 /* SearchViewModel.swift in Sources */,
 				A493899428AC9B45003E6381 /* SceneDelegate.swift in Sources */,
+				A49389D128AF62A5003E6381 /* SectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +651,14 @@
 				kind = branch;
 			};
 		};
+		A49389CD28AF614F003E6381 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -660,6 +676,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A49389C628ACAAE9003E6381 /* XCRemoteSwiftPackageReference "RxOptional" */;
 			productName = RxOptional;
+		};
+		A49389CE28AF614F003E6381 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A49389CD28AF614F003E6381 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
